@@ -1,0 +1,126 @@
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.container-fluid {
+    padding: 0 30px;
+}
+
+.header,
+.product {
+    .navbar-toggler {
+        border-radius: 0;
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-toggler {
+        &:hover {
+            .icon-bar {
+                background-color: $color-blue;
+            }
+            .icon-close {
+                color: $color-blue;
+            }
+        }
+        .icon-bar {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background-color: $color-white-0;
+            &+.icon-bar {
+                margin-top: $mg-0;
+            }
+        }
+        .icon-close {
+            display: block;
+            color: $color-white-0;
+            line-height: 14px;
+        }
+    }
+    .nav-tabs {
+        border: none;
+    }
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        background: none;
+    }
+    .nav-tabs .nav-item .nav-link,
+    .nav-tabs .nav-link {
+        color: $color-white-0;
+    }
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: $color-blue-2;
+    }
+    .nav-tabs .nav-link {
+        border: none;
+    }
+}
+
+.modal {
+    color: $color-black-0;
+    padding-right: 17px;
+    padding-left: 17px;
+    .modal-dialog {
+        max-width: 90%;
+        width: 892px;
+        @include mediaQueryMax('large') {
+            margin: $mg-1 auto;
+            width: 714px;
+        }
+        @include mediaQueryMax('medium') {
+            max-width: 93.33%;
+            width: auto;
+        }
+        .modal-content {
+            border-radius: 0;
+            .modal-header {
+                border: none;
+            }
+        }
+        .modal-body {
+            margin-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+    .nav-tabs .nav-link {
+        border-radius: 0;
+    }
+}
+
+.dropdown {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    .dropdown-menu {
+        width: 100vw;
+        background-color: #fff;
+        font-size: 1rem;
+        right: 0;
+        width: 100vw;
+        height: calc(100vh - 80px);
+        z-index: 10050;
+        border-radius: 0;
+    }
+}

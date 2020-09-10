@@ -1,0 +1,36 @@
+.site-map {
+    margin: 100px 0;
+    .site-map__item {
+        .site-map__item__heading {
+            position: relative;
+            padding-bottom: $pd-4;
+            &::after {
+                background: $color-gray-3;
+                content: '';
+                display: block;
+                height: 1px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            h2 {
+                font-family: 'Playfair Display', sans-serif;
+                @include styleText($color-white-0, $fs-4, $fw-normal);
+            }
+        }
+        .site-map__item__content {
+            padding-top: $pd-4;
+            ul {
+                list-style: none;
+            }
+            a {
+                @include styleText($color-gray-5, $fs-6, $fw-normal);
+                transition: color .25s ease-out;
+                &:hover {
+                    color: $color-blue-2;
+                }
+            }
+        }
+    }
+}

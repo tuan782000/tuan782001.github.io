@@ -1,0 +1,39 @@
+.btn--learn-more {
+    @include styleButton($color-gray-3, $color-gray-3, 7px, $pd-2);
+    @include styleText($color-gray-6, $fs-0, $fw-normal);
+    &:hover {
+        @include hoverButton($color-gray-7, $color-gray-6, $color-gray-7);
+    }
+}
+
+.btn--local-website {
+    @include styleButton($color-blue, $color-blue, $pd-0 + 1, $pd-1 + 2);
+    @include styleText($color-white-0, $fs-0, $fw-normal);
+    &:hover {
+        @include hoverButton($color-blue-2, $color-white-0, $color-blue-2);
+    }
+    @include mediaQueryMax('medium') {
+        width: 100%;
+    }
+}
+
+.btn--show-more {
+    border: 1px solid $color-gray-1;
+    border-radius: 1px;
+    background: linear-gradient($color-gray-2, $color-gray-1);
+    @include styleText($color-gray-5, $fs-0, $fw-normal);
+    &:hover {
+        color: $color-white-0;
+    }
+}
+
+.btn--submit {
+    background: linear-gradient(#242424, #0b0b0b);
+    border: none;
+    border-radius: 0;
+    @include styleText($color-gray-5, $fs-6, $fw-normal);
+    transition: all .25s;
+    &:hover {
+        color: $color-blue-2;
+    }
+}

@@ -1,0 +1,90 @@
+.my-flyout {
+    position: fixed;
+    top: 108px;
+    @include mediaQueryMax('extra-large') {
+        top: 97px;
+    }
+    @include mediaQueryMax('large') {
+        top: 80px;
+    }
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-color: #fff;
+    visibility: hidden;
+    overflow-y: auto;
+    @include mediaQueryMax('large') {
+        visibility: visible;
+        transition: transform .5s;
+        transform: translateX(100%);
+    }
+    .close-flyout {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: $color-black-0;
+        &:hover {
+            color: $color-blue;
+        }
+        font-size: $fs-3;
+        cursor: pointer;
+        z-index: 99;
+        @include mediaQueryMax('large') {
+            right: unset;
+            left: 15px;
+        }
+    }
+    .flyout-carousel-item {
+        padding: 100px 0;
+        .flyout-car {
+            cursor: pointer;
+            .car-label {
+                font-family: 'Playfair Display', sans-serif;
+                color: $color-blue;
+                text-align: center;
+                font-size: $fs-2;
+                margin-top: $mg-2;
+            }
+            &:hover {
+                .car-label {
+                    color: $color-blue-2;
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 4rem;
+        text-align: center;
+        width: 100%;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            button {
+                background: transparent;
+                color: transparent;
+                border: none;
+                position: relative;
+                height: 13px;
+                width: 50px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    height: 3px;
+                    width: 50px;
+                    background-color: $color-gray-3;
+                }
+            }
+            &.slick-active {
+                button::before {
+                    background-color: $color-blue;
+                }
+            }
+        }
+    }
+}

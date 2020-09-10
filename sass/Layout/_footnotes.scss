@@ -1,0 +1,8 @@
+.footnotes {
+    .footnotes__content {
+        @include styleText($color-white-0, $fs-6, $fw-normal);
+        i {
+            font-size: $fs-2;
+        }
+    }
+}

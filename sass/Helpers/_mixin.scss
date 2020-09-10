@@ -1,0 +1,42 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButton($bg-color, $border, $pd-tp, $pd-rl) {
+    background: $bg-color;
+    border: 1px solid $border;
+    padding: $pd-tp $pd-rl;
+    border-radius: 1px;
+}
+
+@mixin hoverButton($bg-color, $color, $boder) {
+    background-color: $bg-color;
+    color: $color;
+    border: 1px solid $boder;
+}
+
+@mixin mediaQueryMin($screen) {
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @warn "`#($screen)` khong ton tai";
+    }
+}
+
+@mixin mediaQueryMax($screen) {
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @warn "`#($screen)` khong ton tai";
+    }
+}

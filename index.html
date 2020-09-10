@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mercedes-Benz</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Link Fonts Google -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Link Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Link Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link Slicks -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <!-- Link Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <header class="header" id="navbar-hide-scroll">
+        <div class="header__content">
+            <a href="#">
+                <img class="header__logo" src="./img/logo.svg" alt="logo-img">
+                <img class="header__brand" src="./img/brand-without-claim.svg" alt="brand-img">
+            </a>
+            <div class="header__meta-nav">
+                <nav class="meta-nav d-flex">
+                    <div class="meta-nav__left">
+                        <ul>
+                            <li class="meta-nav-item" data-toggle="modal" data-target="#exampleModal">
+                                <a class="meta-nav-link" href="#">
+                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                    <span>Provider/Privacy Statement</span>
+                                </a>
+                            </li>
+                            <li class="meta-nav-item"><a class="meta-nav-link" href="#"><span>Newsletter</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="meta-nav__right">
+                        <ul>
+                            <li class="meta-nav-item"><a class="meta-nav-link" href="#">Deutsch</a></li>
+                            <li class="meta-nav-item d-none"><a class="meta-nav-link" href="#">English</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="header__main-nav">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="icon-bars">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                        <span class="icon-close d-none">&#10006;</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" id="btn-flyout" href="#">Vehicles</a>
+                                <div class="my-flyout" id="my-flyout">
+                                    <div id="close-flyout" class="close-flyout">
+                                        <i class="fa fa-angle-left d-block d-lg-none" aria-hidden="true"> Back</i>
+                                        <span class="d-none d-lg-block">&#10006;</span>
+                                    </div>
+                                    <div class="flyout-carousel">
+                                        <div class="flyout-carousel-item">
+                                            <div class="container">
+                                                <div class="row pb-4">
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-a.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-amg-gt.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-b.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-c.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-4">
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-cla.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-cls.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-e.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-eqc.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flyout-carousel-item">
+                                            <div class="container">
+                                                <div class="row pb-4">
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-eqv.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-g.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-gla.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-gle.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-4">
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-gls.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-maybach.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-overview.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-s.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flyout-carousel-item">
+                                            <div class="container">
+                                                <div class="row pb-4">
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-sl.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-slc.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-v.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                    <div class="flyout-car col-12 col-sm-6 col-md-3">
+                                                        <img class="img-fluid" src="./img/car-x.jpeg" alt="car-a">
+                                                        <h6 class="car-label">Overview</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Innovation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Museum & History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lifestyle</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="my-carousel" data-aos="fade-up" data-aos-duration="1000">
+        <div class="carousel__bg">
+            <div class="carousel__item item">
+                <img src="./img//carousel-1.jpeg" alt="">
+                <div class="carousel__wrap">
+                    <div class="carousel__content">
+                        <div class="carousel__text">
+                            <h2 class="line-on position-relative">The VISION EQS</h2>
+                        </div>
+                        <button class="btn--learn-more btn btn-dark mt-3">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item item">
+                <img src="./img//carousel-2.jpeg" alt="">
+                <div class="carousel__wrap">
+                    <div class="carousel__content">
+                        <div class="carousel__text">
+                            <h2 class="line-on position-relative">Enjoy Electric: Star DJ Felix Jaehn and the EQC Edition 1886.</h2>
+                        </div>
+                        <button class="btn--learn-more btn btn-dark mt-3">Learn more</button>
+                    </div>
+                    <div class="carousel__comment">
+                        <p>
+                            EQC 400 4MATIC:
+                            <br>Stromverbrauch kombiniert: 20,8–19,7 kWh/100 km;
+                            <br>CO₂-Emissionen kombiniert: 0 g/km.⁶
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item item">
+                <img src="./img//carousel-3.jpeg" alt="">
+                <div class="carousel__wrap">
+                    <div class="carousel__content">
+                        <div class="carousel__text">
+                            <h2 class="line-on position-relative">The new GLE Coupé.</h2>
+                        </div>
+                        <button class="btn--learn-more btn btn-dark mt-3">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item item">
+                <img src="./img//carousel-4.jpeg" alt="">
+                <div class="carousel__wrap">
+                    <div class="carousel__content">
+                        <div class="carousel__text">
+                            <h2 class="line-on position-relative">The new EQV.</h2>
+                        </div>
+                        <button class="btn--learn-more btn btn-dark mt-3">Learn more</button>
+                    </div>
+                    <div class="carousel__comment">
+                        <p>
+                            Stromverbrauch kombiniert: 27,0 kWh/100 km;
+                            <br> CO₂-Emissionen kombiniert: 0 g/km.⁷
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item item">
+                <img src="./img//carousel-5.jpeg" alt="">
+                <div class="carousel__wrap">
+                    <div class="carousel__content">
+                        <div class="carousel__text">
+                            <h2 class="line-on position-relative">The new GLB: All kinds of strength.</h2>
+                        </div>
+                        <button class="btn--learn-more btn btn-dark mt-3">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intro" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="local-website">
+                <h2 class="line-on position-relative">Welcome to the Mercedes-Benz international website.</h2>
+                <p>Exclusive reports and current films: experience a broad range of topics from the fascinating world of Mercedes-Benz. To find out about offers in your location, please go to the local Mercedes-Benz website.</p>
+                <button type="button" class="btn--local-website btn btn-primary">Bring me to my local website</button>
+            </div>
+            <div class="channel">
+                <div class="row">
+                    <div class="col-md-3 col-6 py-md-0 py-1 px-1">
+                        <a class="chanel__item" href="#"><img class="img-fluid" src="./img/eq-channel-tile.jpeg" alt=""></a>
+                    </div>
+                    <div class="col-md-3 col-6 py-md-0 py-1 px-1">
+                        <a class="chanel__item" href="#"><img class="img-fluid" src="./img/museum-channel-tile.jpeg" alt=""></a>
+                    </div>
+                    <div class="col-md-3 col-6 py-md-0 py-1 px-1">
+                        <a class="chanel__item" href="#"><img class="img-fluid" src="./img/me-channel-tile.jpeg" alt=""></a>
+                    </div>
+                    <div class="col-md-3 col-6 py-md-0 py-1 px-1">
+                        <a class="chanel__item" href="#"><img class="img-fluid" src="./img/she-channel-tile.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product" data-aos="fade-up" data-aos-duration="1000">
+        <ul class="product__nav nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">
+                    <i class="fa fa-newspaper-o mr-2" aria-hidden="true"></i>
+                    <span>New</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false">
+                    <i class="fa fa-star mr-2" aria-hidden="true"></i>
+                    <span>Popular</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">
+                    <i class="fa fa-play mr-2" aria-hidden="true"></i>
+                    <span>Videos</span>
+                </a>
+            </li>
+        </ul>
+        <div class="product__content tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+                <div class="product__grid" data-aos="fade-up">
+                    <div class="product__item large">
+                        <img class="" src="./img/carousel-28.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-29.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-30.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-31.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-5.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-6.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-7.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-8.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-9.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item large">
+                        <img class="" src="./img/carousel-10.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-11.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-12.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-13.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img class="" src="./img/carousel-14.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-15.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-16.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-17.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-18.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item large product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-19.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-20.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-21.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-22.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-23.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-24.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-25.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-26.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-27.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item large product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-2.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-3.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-4.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-5.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                    <div class="product__item product__more visuallyhidden hidden">
+                        <img class="" src="./img/carousel-6.jpeg" alt="">
+                        <div class="product__wrap">
+                            <h3>Mercedes-Benz celebrates two years of partnership with ESL.</h3>
+                            <p>
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                                <span> 11,3 l/100 km </span>
+                                <i class="fa fa-leaf ml-2" aria-hidden="true"></i>
+                                <span> 257 g/km.¹ </span>
+                            </p>
+                            <p>Mercedes-Benz and ESL have been driving forward the development of eSports together for two years.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__btn text-center" id="product__btn">
+                    <button class="btn btn--show-more">
+                        <i class="mr-1 ml-1 fa fa-angle-down" aria-hidden="true"></i>
+                        <span>Show more</span>
+                    </button>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">...</div>
+            <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">...</div>
+        </div>
+    </section>
+    <section class="footnotes" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container-fluid">
+            <div class="footnotes__content">
+                <p class="d-flex flex-wrap mb-4">
+                    <span class="mr-4">
+                        <i class="fa fa-fire" aria-hidden="true"></i>
+                        Kraftstoffverbrauch kombiniert
+                    </span>
+                    <span class="mr-4">
+                        <i class="fa fa-leaf" aria-hidden="true"></i>
+                        CO₂-Emissionen kombiniert
+                    </span>
+                    <span>
+                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                        Stromverbrauch im kombinierten Testzyklus
+                    </span>
+                </p>
+                <p>
+                    <sup>1</sup> Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren ermittelt. Es handelt sich um die „NEFZ-CO₂-Werte“ i. S. v. Art. 2 Nr. 1 Durchführungsverordnung (EU) 2017/1153. Die Kraftstoffverbrauchswerte wurden
+                    auf Basis dieser Werte errechnet. Der Stromverbrauch wurde auf der Grundlage der VO 692/2008/EG ermittelt. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen
+                    können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter
+                    www.dat.de unentgeltlich erhältlich ist.
+                </p>
+                <p>
+                    <sup>4</sup> Angaben zu Kraftstoffverbrauch, Stromverbrauch und CO₂-Emissionen sind vorläufig und wurden vom Technischen Dienst für das Zertifizierungsverfahren nach Maßgabe des WLTP-Prüfverfahrens ermittelt und in NEFZ-Werte korreliert.
+                    Eine EG-Typgenehmigung und Konformitätsbescheinigung mit amtlichen Werten liegen noch nicht vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.
+                </p>
+                <p>
+                    <sup>6</sup> Stromverbrauch und Reichweite wurden auf der Grundlage der VO 692/2008/EG ermittelt. Stromverbrauch und Reichweite sind abhängig von der Fahrzeugkonfiguration. Weitere Informationen zum offiziellen Kraftstoffverbrauch
+                    und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen Personenkraftwagenmodelle“ entnommen werden, der an
+                    allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.
+                </p>
+                <p>
+                    <sup>7</sup> Angaben zu Stromverbrauch und Reichweite sind vorläufig und wurden vom Technischen Dienst für das Zertifizierungsverfahren nach Maßgabe der UN/ECE-Regelung Nr. 101 ermittelt. Die EG-Typgenehmigung und eine Konformitätsbescheinigung
+                    mit amtlichen Werten liegen noch nicht vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="site-map" data-aos="fade-up" data-aos-duration="1000">
+        <div class="site-map__container container-fluid">
+            <div class="row m-0">
+                <div class="site-map__item col-12 col-md-3 p-0 pt-5 pt-md-0">
+                    <div class="site-map__item__heading">
+                        <h2 class="line-on position-relative">Discover more</h2>
+                    </div>
+                    <div class="site-map__item__content">
+                        <ul>
+                            <li><a href="#">Electromobility</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Museum & Histor</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Driving Events</a></li>
+                            <li><a href="#">me Convention</a></li>
+                            <li><a href="#">Mercedes me Portal</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-map__item col-12 col-md-3 p-0 pt-5 pt-md-0">
+                    <div class="site-map__item__heading">
+                        <h2 class="line-on position-relative">Shopping</h2>
+                    </div>
+                    <div class="site-map__item__content">
+                        <ul>
+                            <li><a href="#">Dealers around you</a></li>
+                            <li><a href="#">Mercedes-Benz Accessoires</a></li>
+                            <li><a href="#">Mercedes-Benz Collection</a></li>
+                            <li><a href="#">Mercedes me connect Store</a></li>
+                            <li><a href="#">Service & Parts</a></li>
+                            <li><a href="#">Formula 1 Store</a></li>
+                            <li><a href="#">ALL TIME STARS</a></li>
+                            <li><a href="#">Classic Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-map__item col-12 col-md-3 p-0 pt-5 pt-md-0">
+                    <div class="site-map__item__heading">
+                        <h2 class="line-on position-relative">All about cars</h2>
+                    </div>
+                    <div class="site-map__item__content">
+                        <ul>
+                            <li><a href="#">Model Overview</a></li>
+                            <li><a href="#">Configurator</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Dealer Search</a></li>
+                            <li><a href="#">Mercedes-AMG</a></li>
+                            <li><a href="#">Mercedes-Maybach</a></li>
+                            <li><a href="#">Mercedes-Benz Energy</a></li>
+                            <li><a href="#">Mercedes-Benz Bank</a></li>
+                            <li><a href="#">Mercedes me connect</a></li>
+                            <li><a href="#">Fleet Sales</a></li>
+                            <li><a href="#">Mercedes-Benz Ex-Factory Driving Aids</a></li>
+                            <li><a href="#">WLTP</a></li>
+                            <li><a href="#">RDE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-map__item col-12 col-md-3 p-0 pt-5 pt-md-0">
+                    <div class="site-map__item__heading">
+                        <h2 class="line-on position-relative">Daimler</h2>
+                    </div>
+                    <div class="site-map__item__content">
+                        <ul>
+                            <li><a href="#">Daimler.com</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">smart</a></li>
+                            <li><a href="#">car2go</a></li>
+                            <li><a href="#">moovel</a></li>
+                            <li><a href="#">DigitalLife@Daimler</a></li>
+                            <li><a href="#">Vulnerability Reporting Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container-fluid">
+            <div class="stay-info">
+                <div class="stay-info__heading">
+                    <h2 class="line-on position-relative">Stay informed</h2>
+                </div>
+                <div class="stay-info__content">
+                    <div class="row justify-content-between">
+                        <div class="stay-info__left col-lg-5 col-12">
+                            <p>To keep you in the loop of our latest news, register now for our email newsletter.</p>
+                            <form action="">
+                                <div class="row m-0">
+                                    <input class="email-submit col-8" type="email" name="email" placeholder="Your email address">
+                                    <button class="btn--submit col-4 btn btn-dark" type="submit">
+                                        <i class="mr-1 fa fa-angle-right" aria-hidden="true"></i>
+                                        <span>Sign up now</span>
+                                    </button>
+                                </div>
+                                <div class="footer__privacy-policy">
+                                    <input type="checkbox" id="checkbox--privacy-policy" class="checkbox--privacy-policy">
+                                    <label class="label-checkbox--privacy-policy" for="checkbox--privacy-policy" onclick="checkboxPrivacy()">
+                                        <div class="check text-center">
+                                            <i id="check" class="fa fa-check" aria-hidden="true"></i>
+                                        </div>
+                                        I have read the <a href="#">privacy policy</a> <i class="fa fa-sign-out" aria-hidden="true"></i> and agree.
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="stay-info__right col-lg-6 col-12 mt-4 mt-lg-0">
+                            <p>Follow us and use the following social media platforms to get in contact with us and to share your passion for the brand, products and services of Mercedes-Benz.</p>
+                            <div class="footer__social-icons">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-foursquare" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-tumblr" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-xing" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relatewebsite">
+                <div class="row">
+                    <div class="col-md-4 col-12 pb-5 pb-md-0 text-center">
+                        <img src="./img/logo_amg.svg" alt="">
+                    </div>
+                    <div class="col-md-4 col-12 pb-5 pb-md-0 text-center">
+                        <img src="./img/logo_daimler.svg" alt="">
+                    </div>
+                    <div class="col-md-4 col-12 pb-5 pb-md-0 text-center">
+                        <img src="./img/logo_smart.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bot">
+                <div class="row">
+                    <div class="col-xl-2 col-md-3 col-12 ml-2 ml-md-0 pl-3 pl-md-0">
+                        <div class="lang-switch">
+                            <ul>
+                                <li><a href="#">Deutsch</a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-md-8 col-sm-11 col-12">
+                        <div class="footer__nav d-flex flex-wrap float-right">
+                            <ul>
+                                <li><a href="#">Provider</a></li>
+                                <li><a href="#">Legal Notice</a></li>
+                                <li><a href="#">Cookies</a></li>
+                                <li><a href="#">Privacy Statement</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Newsfeed (RSS)</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Daimler AG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="to-top col-sm-1 col-12 text-right p-0">
+                        <a id="back-to-top" href="#" class="btn--to-top">
+                            <span>Top</span>
+                            <i class="ml-1 fa fa-angle-up" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="provider-tab" data-toggle="tab" href="#provider" role="tab" aria-controls="provider" aria-selected="true">Provider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="notice-tab" data-toggle="tab" href="#notice" role="tab" aria-controls="notice" aria-selected="false">Legal Notice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cookies-tab" data-toggle="tab" href="#cookies" role="tab" aria-controls="cookies" aria-selected="false">Cookies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="privacy-tab" data-toggle="tab" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy Statement</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="provider" role="tabpanel" aria-labelledby="provider-tab">
+                            <div class="legaltext">
+                                <div class="brandhub-legal-headline mt-4">
+                                    <p class="h5">Mercedes-Benz AG</p>
+                                </div>
+                                <div class="brandhub-legal-text">
+                                    <p>Mercedesstraße 120<br> D-70372 Stuttgart<br> Deutschland</p>
+                                    <p>Phone: +49 7 11 17-0<br> E-Mail: <a href="mailto:dialog.mb@daimler.com">dialog.mb@daimler.com</a></p>
+                                    <p>Represented by the Board of Management:</p>
+                                    <p>Ola Källenius (Vorsitzender), Jörg Burzer, Renata Jungo Brüngger, Sajjad Khan, Sabine Kohleisen, Frank Lindenberg, Markus Schäfer, Britta Seeger</p>
+                                    <p>Chairman of the Supervisory Board:&nbsp;Manfred Bischoff</p>
+                                    <p>Court of Registry: Stuttgart; commercial register no. 762873</p>
+                                    <p>&nbsp;</p>
+                                    <p><b>Other companies advertising on this website:</b></p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="legaltext">
+                                <div class="brandhub-legal-headline">
+                                    <p>Provider of Daimler contents</p>
+                                </div>
+                                <div class="brandhub-legal-text">
+                                    <p>Daimler AG</p>
+                                    <p>Mercedesstraße 120<br> D-70372 Stuttgart<br> Deutschland</p>
+                                    <p>Phone: +49 7 11 17-0<br> E-Mail:&nbsp;<a href="dialog@daimler.com">dialog@daimler.com</a></p>
+                                    <p>Represented by the Board of Management:</p>
+                                    <p>Ola Källenius (Vorsitzender), Martin Daum, Renata Jungo Brüngger, Wilfried Porth, Markus Schäfer, Britta Seeger, Hubertus Troska, Harald Wilhelm</p>
+                                    <p>Chairman of the Supervisory Board:&nbsp;Manfred Bischoff</p>
+                                    <p>Court of Registry: Stuttgart; commercial register no. 19360</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="legaltext">
+                                <div class="brandhub-legal-headline">
+                                    <p>Provider of Daimler Truck contents</p>
+                                </div>
+                                <div class="brandhub-legal-text">
+                                    <p>Daimler Truck AG</p>
+                                    <p>Mercedesstraße 120<br> D-70372 Stuttgart<br> Deutschland</p>
+                                    <p>Phone: +49 7 11 17-0<br> E-Mail:&nbsp;<a href="mailto:dialog.dt@daimler.com">dialog.dt@daimler.com</a></p>
+                                    <p>Represented by the Board of Management:</p>
+                                    <p>Martin Daum (Vorsitzender), Stefan Buchner, Sven Ennerst, Jochen Götz, Jürgen Hartwig, Roger Nielsen, Hartmut Schick</p>
+                                    <p>Chairman of the Supervisory Board: Ola Källenius</p>
+                                    <p>Court of Registry: Stuttgart; commercial register no. 762884</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="legaltext">
+                                <div class="brandhub-legal-headline">
+                                    <p>Provider of Mercedes-Benz Museum contents</p>
+                                </div>
+                                <div class="brandhub-legal-text">
+                                    <p>Mercedes-Benz Museum GmbH<br> Eine Tochtergesellschaft der Daimler AG</p>
+                                    <p>Mercedesstraße 100<br> D-70372 Stuttgart<br> Deutschland</p>
+                                    <p>Phone: +49(0)711-17 30 000<br> Fax: +49(0)711-17 30 400<br> E-Mail: <a href="mailto:classic@daimler.com">classic@daimler.com</a></p>
+                                    <p>Managing Directors: Christian Boucke (Chairman), Monja Büdke, Patrizia Radegast</p>
+                                    <p>Domicile and Court of Registry: Stuttgart, HRB-Nr.: 23 165</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="notice" role="tabpanel" aria-labelledby="notice-tab">...</div>
+                        <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- //Link Bootstrap JS -->
+    <!-- Link Slicks -->
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <!-- Link Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Link JS -->
+    <script src="./js/read-more.js"></script>
+    <script src="./js/checkbox-privacy.js"></script>
+    <script src="./js/to-top.js"></script>
+    <script src="./js/navbar-hide-scroll.js"></script>
+    <script src="./js/flyout.js"></script>
+    <script src="./js/navbar-toggle.js"></script>
+    <!-- //Link JS -->
+    <!-- Carousel Modify -->
+    <script>
+        $('.flyout-carousel').slick({
+            autoplay: false,
+            arrows: false,
+            dots: true
+        });
+    </script>
+    <script>
+        $('.carousel__bg').slick({
+            autoplay: true,
+            nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+            prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        });
+    </script>
+    <!--// Carousel Modify -->
+    <!-- Animate on Scroll Modify -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- //Animate on Scroll Modify -->
+</body>
+
+</html>

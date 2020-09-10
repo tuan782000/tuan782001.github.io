@@ -1,0 +1,11 @@
+.line-on {
+    &::after {
+        content: '';
+        width: 60px;
+        height: 2px;
+        position: absolute;
+        background-color: white;
+        left: 0%;
+        top: -30px;
+    }
+}

@@ -1,0 +1,40 @@
+.list-inline {
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.hover--gray-to-blue {
+    color: $color-gray-5;
+    &:hover {
+        color: $color-blue-2;
+    }
+}
+
+.d-flyout {
+    visibility: visible !important;
+    @include mediaQueryMax('large') {
+        transform: translateX(0) !important;
+    }
+}
+
+.body-overflow-hidden {
+    @include mediaQueryMin(large) {
+        overflow: hidden !important;
+    }
+}
+
+.hidden-by-navbar {
+    @include mediaQueryMax(large) {
+        overflow: hidden !important;
+    }
+}
+
+.d-visibility {
+    @include mediaQueryMax(large) {
+        visibility: hidden;
+    }
+}
